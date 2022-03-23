@@ -7,10 +7,10 @@ const app = express()
 app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
-    res.send('Hello world!!!!!!!!!!')
+    res.send('i love u david')
 })
 
-app.get('*', (rqe, res) => {
+app.get('*', (req, res) => {
     res.status(404).send('<h1> 404 Page </>')
 })
 
